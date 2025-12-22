@@ -14,9 +14,12 @@ def process_line(line):
         return text.lower()
     if cmd == "prefix":
         return text[:10]
+    if cmd == "counter-words":
+        return str(len(text.split()))
+    if cmd == "length":
+        return str(len(text))
 
     return "Unknown command " + cmd
-
 
 
 def main():
