@@ -23,6 +23,9 @@ def process_line(line):
 
 
 def main():
+
+"""Boucle principale récupérant les entrées utilisateur."""
+
     while True:
         try:
             line = input("commade> ")
